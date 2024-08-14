@@ -9,8 +9,6 @@ class BasketTest {
     public void testAddBagelType() {
         Basket basket = new Basket();
         String bagelType = "Original";
-        String bagelType2 = "Oal";
-        String bagel3 = "hha";
 
         Assertions.assertTrue(basket.addBagel(bagelType));
 
@@ -23,18 +21,25 @@ class BasketTest {
 
         String bagelType = "Special";
 
-        Assertions.assertFalse(basket.removeBagel(bagelType));
-
-
-
+        Assertions.assertTrue(basket.removeBagel(bagelType));
 
     }
 
+    @Test
+    public void testChangeBasketCapacity() {
+        Basket basket = new Basket();
 
+        basket.addBagel("Onion");
+        basket.addBagel("Cheese");
+        basket.addBagel("Lettuce");
 
+        Assertions.assertTrue(basket.addBagel("Meat"));
 
+        basket.changeBasketCapacity(10);
 
-
+        Assertions.assertTrue(basket.addBagel("Plain"));
+        
+    }
 
 
 }
