@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class BasketTest {
 
     @Test
-    public void testAddBagelType() {
+    public void testAddBagel() {
         Basket basket = new Basket();
         String bagelType = "Original";
 
@@ -33,13 +33,12 @@ class BasketTest {
         basket.addBagel("Cheese");
         basket.addBagel("Lettuce");
 
-        Assertions.assertTrue(basket.addBagel("Meat"));
+        Assertions.assertFalse(basket.addBagel("Meat"));
 
         basket.changeBasketCapacity(10);
 
         Assertions.assertTrue(basket.addBagel("Plain"));
-        
-    }
 
+    }
 
 }
