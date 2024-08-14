@@ -33,6 +33,8 @@ class BasketTest {
         basket.addBagel("Cheese");
         basket.addBagel("Lettuce");
 
+        basket.addBagel("Salt");
+
         Assertions.assertFalse(basket.addBagel("Meat"));
 
         basket.changeBasketCapacity(10);
