@@ -24,9 +24,6 @@ public class Basket {
         return false;
     }
 
-
-
-
     public boolean removeBagel(String bagelType) {
         if (bagels.contains(bagelType)){
             bagels.remove(bagelType);
@@ -35,6 +32,7 @@ public class Basket {
         }
         return false;
     }
+
 
     public boolean changeBasketCapacity(int newBasketCapacity){
         if(managerKey == 9999){
