@@ -8,7 +8,7 @@
 |          | `removeBagel(String bagelType)`                | `int managerKey`      | If bagelType in bagels, remove it from the basket and notify user with true.                      | true       |
 |          |                                                |                       | Else: no bagelType found in bagel, notify user with false.                                        | false      |
 |          |                                                |                       |                                                                                                   |            |
-|          | `changeBasketCapacity(int newBasketCapacity)`  | `int numberOfBaskets` | If user is manager, replace the basketLimit with newBasketCapacity. Success of change equals true | true/false |
+|          | `changeBasketCapacity(int newBasketCapacity)`  |                       | If user is manager, replace the basketLimit with newBasketCapacity. Success of change equals true | true/false |
 
 
 
